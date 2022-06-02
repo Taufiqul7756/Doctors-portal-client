@@ -7,6 +7,7 @@ import Service from "../Service/Service";
 import fluoride from "../../../images/fluoride.png";
 import cavity from "../../../images/cavity.png";
 import whitening from "../../../images/whitening.png";
+import Typography from "@mui/material/Typography";
 
 const services = [
   {
@@ -35,6 +36,20 @@ const Services = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Container>
+        <Typography
+          sx={{ fontWeight: 400, m: 2, color: "info.main" }}
+          variant="h6"
+          component="div"
+        >
+          OUR SERVICES
+        </Typography>
+        <Typography
+          sx={{ fontWeight: 600, color: "text.secondary" }}
+          variant="h4"
+          component="div"
+        >
+          Services We Provide
+        </Typography>
         <Grid
           container
           spacing={{ xs: 2, md: 3 }}
