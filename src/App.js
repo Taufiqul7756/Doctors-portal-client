@@ -9,13 +9,13 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
           <Route path="/appointment">
             <Appointment />
           </Route>
           <Route path="/users">
+            <Home />
+          </Route>
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>
